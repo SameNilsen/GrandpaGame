@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="outerRegion" maxHeight="-Infinity" maxWidth="-Infinity" onKeyPressed="#handleKeyPressed" onKeyReleased="#handleKeyReleased" prefHeight="657.0" prefWidth="2628.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.PlatformController">
+   <top>
+      <HBox fx:id="hbox" nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#handleB1" prefHeight="60.0" prefWidth="85.0" text="GetDucks" />
+            <Label fx:id="mousePos" alignment="BOTTOM_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="135.0" text="Label" textFill="#00ff17" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="anchorPane2" maxHeight="-Infinity" maxWidth="-Infinity" onKeyPressed="#handleKeyPressed" onKeyReleased="#handleKeyReleased" onMouseMoved="#moveScreen" onScroll="#handleScroll" prefHeight="657.0" prefWidth="2628.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

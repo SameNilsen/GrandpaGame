@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="outerRegion" onKeyPressed="#handleKeyPressed" onKeyReleased="#handleKeyReleased" onMouseMoved="#moveScreen" onScroll="#handleScroll" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.MapController">
+   <children>
+      <HBox fx:id="hbox" nodeOrientation="LEFT_TO_RIGHT">
+         <children>
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#handleB1" prefHeight="60.0" prefWidth="85.0" text="GetDucks" />
+            <Label fx:id="mousePos" alignment="BOTTOM_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="135.0" text="Label" textFill="RED" />
+         </children>
+      </HBox>
+      <AnchorPane fx:id="anchorPane2" onKeyPressed="#handleKeyPressed" onKeyReleased="#handleKeyReleased" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
